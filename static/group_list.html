@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+    <head>
+        <meta CHARSET="utf-8" name="description" value="Cписок груп">
+        <title>Список груп студентів</title>
+        <!-- Include styles -->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <!-- Start Container -->
+        <div class="container">
+            <!-- Start Header -->
+            <div class="row">
+                <div class="col-xs-8" id="logo">
+                    <h1>Сервіс обліку студентів</h1>
+                </div>
+                <div class="col-xs-4" id="group-selector">
+                    <strong>Група:</strong>
+                    <select>
+                        <option value="">Усі групи</option>
+                        <option value="">МтМ-21</option>
+                        <option value="">МтМ-22</option>
+                        <option value="">МтМ-23</option>
+                    </select>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Start Subheader -->
+            <div class="row">
+                <div class="col-xs-12" id="navbar">
+                    <ul class="nav nav-tabs">
+                      <li role="presentation"><a href="#">Студенти</a></li>
+                      <li role="presentation"><a href="#">Відвідування</a></li>
+                      <li role="presentation"
+                          class="active"><a href="#">Групи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Subheader -->
+            <!-- Start Main Content -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Main Content Header -->
+                    <h2>Групи</h2>
+                    <!-- Add Group Button -->
+                    <a class="btn btn-primary" href="#" role="button"
+                       id="add_group">Додати групу</a>
+                    <!-- Main Content Table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th><a href="#">Назва &uarr;</a></th>
+                                <th><a href="#">Староста</a></th>
+                                <th>Дії</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- End Main Content -->
+        </div>
+        <!-- End Container -->
+        <!-- JavaScript section -->
+        <script
+                src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+        <script
+                src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
