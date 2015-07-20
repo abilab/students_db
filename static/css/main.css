@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
     border-top: 1px solid #dddddd;
     padding-top: 10px;
+    background: #dddddd;
 }
 
 /* Groups Selector */
@@ -29,4 +30,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Month Navigation */
 #month_nav {
     text-align: center;
+}
+
+/* Group Selection */
+#group_sel {
+    margin-top: 30px;
 }
