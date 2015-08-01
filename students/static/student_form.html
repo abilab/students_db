@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" name="description" value="Форма студента">
+    <title>Форма Студента</title>
+    <!-- Include Styles -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!-- Start Container -->
+<div class="container">
+    <!-- Start Footer -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Форма редагування Студента</h1>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <!-- Start Form -->
+    <div class="row">
+        <div class="col-xs-12">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-2 control-label">Ім'я*
+                    </label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="inputName"
+                         placeholder="Віталій">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fatherName" class="col-sm-2 control-label">По-батькові
+                    </label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="fatherName" placeholder="Іванович">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Surname" class="col-sm-2 control-label">Прізвище*
+                    </label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="Surname" placeholder="Подоба">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="ticketNum" class="col-sm-2 control-label">№ Білету*</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="ticketNum" placeholder="254">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDay" class="col-sm-2 control-label">Дата
+                        народження</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="birthDay"
+                               placeholder="1984-06-17">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="photoMenu" class="col-sm-2 control-label">Фото
+                        </label>
+                    <div class="col-sm-4">
+                        <p>Наразі: <a href="#">Student_photos
+                            /None_podoba3_1.jpg</a><input type="checkbox"></p>
+                        <p>Очистити</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <p style="display: inline;">Змінити:
+                        <input type="file" style="display: inline;">
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group" id="group_sel">
+                    <label for="groupSelector"
+                           class="col-sm-2 control-label">Група*</label>
+                    <div class="col-sm-3">
+                        <select id="groupSelector" class="form-control">
+                            <option value="">МтМ-21</option>
+                            <option value="">МтМ-22</option>
+                            <option value="">МтМ-23</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="remarks"
+                           class="col-sm-2 control-label">Додаткові Нотатки
+                    </label>
+                    <div class="col-sm-3">
+                        <textarea class="form-control" rows="3">тест d</textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Form -->
+    <!-- Start Footer -->
+    <div class="row" id="footer">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+            <a href="#" class="btn btn-primary">Зберегти</a>
+            <a href="#" class="btn btn-default">Скасувати</a>
+        </div>
+    </div>
+    <!-- End Footer -->
+</div>
+<!-- End Container -->
+</body>
+</html>
