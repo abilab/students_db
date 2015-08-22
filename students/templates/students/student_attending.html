@@ -1,0 +1,75 @@
+{% extends "students/base.html" %}
+{% load static from staticfiles %}
+{% block meta_title %}Журнал відвідування{% endblock meta_title %}
+{% block title %}Журнал Відвідування{% endblock title %}
+{% block content %}
+    <!-- Start Month Nav -->
+    <div class="row">
+        <div class="col-xs-12" id="month_nav">
+                <a href="#">&larr;</a>
+                <p style="display: inline;">Жовтень 2014</p>
+                <a href="#">&rarr;</a>
+        </div>
+    </div>
+    <!-- End Month Nav -->
+    <!-- Start Table -->
+    <div class="col-xs-12">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Студент</th>
+                    <th>Ср 1</th>
+                    <th>Чт 2</th>
+                    <th>Пт 3</th>
+                    <th>Сб 4</th>
+                    <th>Нд 5</th>
+                    <th>Пн 6</th>
+                    <th>Вт 7</th>
+                    <th>Ср 8</th>
+                    <th>Чт 9</th>
+                    <th>Пт 10</th>
+                    <th>Сб 11</th>
+                    <th>Нд 12</th>
+                    <th>Пн 13</th>
+                    <th>Вт 14</th>
+                    <th>Ср 15</th>
+                    <th>Чт 16</th>
+                    <th>Пт 17</th>
+                    <th>Сб 18</th>
+                    <th>Нд 19</th>
+                    <th>Пн 20</th>
+                    <th>Вт 21</th>
+                    <th>Ср 22</th>
+                    <th>Чт 23</th>
+                    <th>Пт 24</th>
+                    <th>Сб 25</th>
+                    <th>Нд 26</th>
+                    <th>Пн 27</th>
+                    <th>Вт 28</th>
+                    <th>Ср 29</th>
+                    <th>Чт 30</th>
+                    <th>Пт 31</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>
+                        <a href="{% url 'students_edit' student.id %}">
+                            {{ student.first_name}} {{student.last_name}}
+                        </a>
+                    </td>
+                    {% for day in student.attending_marks %}
+                    <td><input type="checkbox"
+                            {% if day == 0 %} checked {% endif %}></td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!-- End Table -->
+    <!-- End Main Content -->
+{% endblock content %}
