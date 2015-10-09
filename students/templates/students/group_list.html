@@ -20,12 +20,16 @@
             {% for group in groups %}
             <tr>
                 <td>{{ forloop.counter }}</td>
-                <td><a href="{% url 'groups_edit' group.id %}"
-                       title="Редагувати">{{ group.group_name }}</a></td>
-                <td><a
-                        href="{% url 'students_edit' group.group_leader_id %}"
-                       title="Редагувати">{{ group.group_leader }}
-                </a></td>
+                <td>
+                    <a href="{% url 'groups_edit' group.id %}" title="Редагувати">
+                        {{ group.title }}
+                    </a>
+                </td>
+                <td>
+                    <a href="{% url 'students_edit' group.leader.id %}" title="Редагувати">
+                        {{ group.leader }}
+                    </a>
+                </td>
                 <td>
                     <div class="dropdown">
                         <button class="btn btn-default dropdown-toggle"
@@ -55,6 +59,7 @@
             {% endfor %}
         </tbody>
     </table>
-    {% include 'students/pagination.html' %}
-
+    {% with page_list=groups url_page="groups" %}
+        {% include 'students/pagination.html' %}
+    {% endwith %}
 {% endblock content %}

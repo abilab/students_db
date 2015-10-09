@@ -107,6 +107,7 @@
         </tbody>
     </table>
     <!-- End Students Listing -->
-    {% include 'students/pagination.html' %}
-
+    {% with page_list=students url_page="home"%}
+        {% include 'students/pagination.html' %}
+    {% endwith %}
 {% endblock content %}
