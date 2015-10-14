@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from students.views import students, groups, journal
+from students.views import students, groups, journal, contact_admin
 from .settings import DEBUG, MEDIA_ROOT
 
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^contact-admin/$', contact_admin.contact_admin,
+        name='contact_admin'),
     # Students Urls
     url(r'^$', students.students_list, name='home'),
     url(r'^students/add/$', students.students_add, name='students_add'),
