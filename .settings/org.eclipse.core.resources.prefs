@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
 encoding//students/migrations/0001_initial.py=utf-8
-encoding//students/models.py=utf-8
+encoding//students/migrations/0004_student_student_group.py=utf-8
+encoding//students/models/monthjournal.py=utf-8
+encoding//students/models/student_group.py=utf-8

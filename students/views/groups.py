@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from students.models import Group
+from students.models.student_group import Group
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 

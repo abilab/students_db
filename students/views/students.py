@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
-from ..models import Student, Group
+from students.models.student_group import Student, Group
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from _datetime import datetime
 
